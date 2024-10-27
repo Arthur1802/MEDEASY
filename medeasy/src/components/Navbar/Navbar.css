@@ -1,0 +1,126 @@
+.navbar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100px;
+    padding: 0 2rem;
+    background-color: var(--primary-container-bg-color);
+    box-shadow: var(--box-shadow-values);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-container .menu-btn {
+    display: none;
+}
+
+.navbar-container .sections {
+    width: 50%;
+    display: flex;
+}
+
+.navbar-container .sections:nth-child(1) {
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.navbar-container .sections:nth-child(1) img {
+    width: 200px;
+}
+
+.navbar-container .sections:nth-child(2) {
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navbar-container ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.navbar-container ul li a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.navbar-container ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--primary-text-color);
+    transition: width 0.3s ease;
+}
+
+.navbar-container ul li a:hover::after {
+    width: 100%;
+}
+
+.navbar-container ul li a:hover {
+    color: var(--primary-aux-color);
+}
+
+.navbar-container ul li svg {
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        top: 0;
+        /* left: -40%; */
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        width: 350px;
+        height: 100dvh;
+        padding: 0;
+    }
+
+    .navbar-container .menu-btn {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    .navbar-container .sections {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .navbar-container .sections:nth-child(1) {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .navbar-container ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+    
+    .navbar-container ul li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid red;
+    }
+
+    .navbar-container ul li svg {
+        margin: 0;
+    }
+}

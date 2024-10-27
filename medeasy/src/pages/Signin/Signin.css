@@ -1,0 +1,107 @@
+.auth-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-floating {
+    background: var(--primary-container-bg-color);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-floating input {
+    border: none;
+    background: transparent;
+    width: 90%;    
+}
+
+.form-floating svg {
+    cursor: pointer;
+}
+
+.form-floating input:focus {
+    border-color: var(--primary-aux-color);
+    box-shadow: none;
+    outline: none;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    background: var(--primary-aux-color);
+    color: var(--primary-text-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    color: var(--secondary-text-color);
+    background: var(--primary-aux-color);
+    box-shadow: var(--box-shadow-values);
+}
+
+.btn-secondary {
+    color: var(--primary-aux-color);
+}
+
+.btn-secondary:hover {
+    color: var(--secondary-text-color);
+    box-shadow: var(--box-shadow-values);
+}
+
+.btn .btn-icons {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.separator {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+}
+
+.separator span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-text-color);
+    font-size: 16px;
+    flex: .2 0 auto;
+}
+
+.separator span::before, .separator span::after {
+    content: "";
+    background: var(--primary-text-color);
+    border: 1px solid var(--primary-text-color);
+    height: 1.5px;
+    width: 140%;
+    flex: 1 0 auto;
+    border-radius: 50px;
+    margin: 0 10px;
+}

@@ -1,0 +1,49 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.welcome-container h1 {
+    color: var(--primary-text-color);
+}
+
+.welcome-container .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.welcome-container button {
+    width: 200px;
+    height: 50px;
+    color: var(--primary-aux-color);
+    background: transparent;
+    border: 1px solid var(--primary-aux-color);
+    border-radius: var(--border-radius-values);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.welcome-container button:hover {
+    box-shadow: var(--box-shadow-values);
+    background: var(--primary-aux-color);
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .welcome-container button {
+        background: var(--primary-aux-color);
+        color: var(--secondary-text-color);
+        box-shadow: var(--box-shadow-values);
+    }
+    .welcome-container .btn-container {
+        flex-direction: column;
+    }
+}    

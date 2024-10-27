@@ -1,0 +1,6 @@
+.index-container {
+    background: var(--primary-bg-color);
+    width: 100dvw;
+    height: 100dvh;
+    transition: background 0.3s ease;
+}
