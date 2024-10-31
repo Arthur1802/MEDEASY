@@ -34,14 +34,6 @@ const Signin = () => {
                     <i className = "btn-icons fa-brands fa-google"></i>
                     <span>Continue with Google</span>
                 </button>
-                <button className = "btn btn-secondary poppins-medium">
-                    <i className = "btn-icons fa-brands fa-apple"></i>
-                    <span>Continue with Apple</span>
-                </button>
-                <button className = "btn btn-secondary poppins-medium">
-                    <i className = "btn-icons fa-brands fa-microsoft"></i>
-                    <span>Continue with Microsoft</span>
-                </button>
             </form>
         </div>
     )

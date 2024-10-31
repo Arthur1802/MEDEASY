@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { toast, ToastContainer, Slide } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { Navigate } from 'react-router-dom'
-import { isLoggedIn } from '../../utils/auth'
+import { isLoggedIn } from '../../utils/auth.js'
 import PropTypes from 'prop-types'
 
 const ProtectedRoute = ({ children }) => {
