@@ -48,6 +48,11 @@ form {
     font-size: 14px;
 }
 
+.btn-primary, .btn-secondary {
+    width: 100%;
+    padding: 10px 20px;
+}
+
 .btn-primary {
     background: var(--primary-aux-color);
     color: var(--primary-text-color);
